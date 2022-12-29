@@ -1,13 +1,15 @@
 import Profile from "./Profile/Profile"
 import Statistics from "./Statistics/Statistics"
-// import FriendList from "./FriendList/FriendList"
+import { FriendList } from './FriendList/FriendList/FriendList';
+
+
 import { PageTitle } from "components/PageTitle/PageTitle"
 import{EventBoard} from "components/EventBoard/EventBoard"
 
 // console.log(FriendList);
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
-// import friends from './FriendList/friends.json';
+import friends from './FriendList/friends.json';
 import events from './EventBoard/event.json'
 // console.log('friendsinaapp :>> ', friends);
 
@@ -44,7 +46,7 @@ export const App = () => {
       </div>
 
 
-      {/* <FriendList friends={friends} /> */}
+      <FriendList friends={friends} />
     </div>
   );
 };
