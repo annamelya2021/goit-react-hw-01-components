@@ -1,10 +1,19 @@
-import Profile from "./Profile"
-import Statistics from "./Statistics"
-// console.log(Statictics);
-import user from './user.json';
-import data from './data.json';
+import Profile from "./Profile/Profile"
+import Statistics from "./Statistics/Statistics"
+// import FriendList from "./FriendList/FriendList"
+import { PageTitle } from "components/PageTitle/PageTitle"
+import{EventBoard} from "components/EventBoard/EventBoard"
+
+// console.log(FriendList);
+import user from './Profile/user.json';
+import data from './Statistics/data.json';
+// import friends from './FriendList/friends.json';
+import events from './EventBoard/event.json'
+// console.log('friendsinaapp :>> ', friends);
+
 // import ReactDOM from 'react-dom';
-const App = () => {
+// import { App } from 'components/App';
+export const App = () => {
   return (
     <div
       style={{
@@ -26,8 +35,17 @@ const App = () => {
 
       <Statistics
         title="Upload stats"
-        stats={data} />
+        stats={data}
+      />
+
+      <div>
+        <PageTitle  text='hhh000'/>
+        <EventBoard events={events} />
+      </div>
+
+
+      {/* <FriendList friends={friends} /> */}
     </div>
   );
 };
-export default App;
+// export default App;
