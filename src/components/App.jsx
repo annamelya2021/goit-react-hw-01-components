@@ -1,6 +1,7 @@
 import Profile from "./Profile/Profile"
 import Statistics from "./Statistics/Statistics"
 import { FriendList } from './FriendList/FriendList/FriendList';
+import {TransactionHistory} from './TransactionHistory/TransactionHistory';
 
 
 import { PageTitle } from "components/PageTitle/PageTitle"
@@ -11,6 +12,7 @@ import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
 import events from './EventBoard/event.json'
+import transactions from './TransactionHistory/transactions.json';
 // console.log('friendsinaapp :>> ', friends);
 
 // import ReactDOM from 'react-dom';
@@ -47,6 +49,7 @@ export const App = () => {
 
 
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />;
     </div>
   );
 };
