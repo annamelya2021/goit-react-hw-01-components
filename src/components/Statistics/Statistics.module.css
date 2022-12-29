@@ -2,11 +2,11 @@
 .statistics {
     width: 300px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.492);
     text-align: center;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 40px auto;
 
   }
 
@@ -18,7 +18,7 @@
     margin: 10px;
   }
 
-  .stat_list {
+  .statList {
     background-color: rgb(219, 215, 215);
     list-style: none;
     display: flex;
@@ -30,6 +30,8 @@
     flex-direction: column;
     width: 100%;
     padding: 10px;
+
+
   }
   .label {
     display: block;

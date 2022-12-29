@@ -6,13 +6,13 @@ import css from './Profile.module.css';
 // console.log(defaultImg);
 // console.log('PropTypes', PropTypes);
 
-function Profile({
+export const Profile=({
   avatar = defaultImg,
   username,
   tag = 'not finded',
   location,
   stats,
-}) {
+}) => {
   // const { avatar, username, tags, location, stats } = props;
   return (
     <div className={css.profile}>
@@ -49,4 +49,4 @@ Profile.propTypes = {
   stats: PropTypes.object.isRequired,
 };
 
-export default Profile;
+// export default Profile;

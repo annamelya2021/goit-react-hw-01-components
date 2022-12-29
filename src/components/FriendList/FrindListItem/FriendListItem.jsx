@@ -1,7 +1,4 @@
-// import friends from 'friends'
 import css from './FriendListItem.module.css'
-// import FriendListItem from '../FrindListItem.module.css/FriendListItem';
-// console.log('friendsFL :>> ', friends);
 
 export const FriendListItem =({ isOnline, avatar, name, id })=> {
   const color = isOnline ? 'green' : 'red';
