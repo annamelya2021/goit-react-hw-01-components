@@ -4,19 +4,11 @@ import { FriendList } from './FriendList/FriendList/FriendList';
 import {TransactionHistory} from './TransactionHistory/TransactionHistory';
 
 
-import { PageTitle } from "components/PageTitle/PageTitle"
-import{EventBoard} from "components/EventBoard/EventBoard"
-
-// console.log(FriendList);
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
-import events from './EventBoard/event.json'
 import transactions from './TransactionHistory/transactions.json';
-// console.log('friendsinaapp :>> ', friends);
 
-// import ReactDOM from 'react-dom';
-// import { App } from 'components/App';
 export const App = () => {
   return (
     <div
@@ -36,18 +28,10 @@ export const App = () => {
     avatar={user.avatar}
     stats={user.stats}
       />
-
       <Statistics
         title="Upload stats"
         stats={data}
       />
-
-      <div>
-        <PageTitle  text='hhh000'/>
-        <EventBoard events={events} />
-      </div>
-
-
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;
     </div>
