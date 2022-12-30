@@ -3,9 +3,6 @@ import defaultImg from './test.jpg';
 import css from './Profile.module.css';
 
 
-// console.log(defaultImg);
-// console.log('PropTypes', PropTypes);
-
 export const Profile=({
   avatar = defaultImg,
   username,
@@ -13,7 +10,6 @@ export const Profile=({
   location,
   stats,
 }) => {
-  // const { avatar, username, tags, location, stats } = props;
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -46,7 +42,11 @@ Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.exact({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+  }).isRequired
 };
 
-// export default Profile;
+

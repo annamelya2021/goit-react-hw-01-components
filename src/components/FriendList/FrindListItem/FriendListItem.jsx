@@ -4,7 +4,7 @@ export const FriendListItem =({ isOnline, avatar, name, id })=> {
   const color = isOnline ? 'green' : 'red';
 
   return (
-    <li key={id} className={css.item}>
+    <li className={css.item}>
       <span className={css[color]} />
       <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
       <p className={css.name}>{name}</p>
